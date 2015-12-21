@@ -41,7 +41,7 @@ public class FlowerBush extends FlowerSet {
         setScent(scent);
 
         // At least, one flower should be presented
-        addFlower ();
+        addFlower (); // Куст вроде как может быть без цветов. Но это уже полемика.
     }
 
     public FlowerBush(String flowerType, String colour) {

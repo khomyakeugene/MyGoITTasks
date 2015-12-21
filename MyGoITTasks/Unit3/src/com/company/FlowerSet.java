@@ -6,7 +6,7 @@ import java.util.Vector;
  * Created by Yevgen on 21.12.2015.
  */
 public class FlowerSet {
-    private Vector<Flower> flowers = null;
+    private Vector<Flower> flowers = null;//класс Vector deprecated - используем другие коллекции.Читаем джава доку.
 
     public FlowerSet() {
         super();
@@ -34,7 +34,7 @@ public class FlowerSet {
     public void showFlowerSet() {
         Utils.writeMessage(getClass().getName());
 
-        for (int i=0; i < getFlowerCount(); i++) {
+        for (int i=0; i < getFlowerCount(); i++) {//соблюдаем пробелы i = 0, либо используем хот ки для выравнивания Ctrl+Alt+L
             Utils.writeMessage(getFlowerByIndex(i).toString());
         }
     }
