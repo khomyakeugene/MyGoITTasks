@@ -41,7 +41,12 @@ public class FlowerBush extends FlowerSet {
         setColour(colour);
         setScent(scent);
 
+<<<<<<< HEAD:MyGoITTasks/Unit3/src/com/company/flowers/FlowerBush.java
         formFlowerBush(flowerCount);
+=======
+        // At least, one flower should be presented
+        addFlower (); // Куст вроде как может быть без цветов. Но это уже полемика.
+>>>>>>> b815bc3a233afd7af6ad6271f377fc7b25969558:MyGoITTasks/Unit3/src/com/company/FlowerBush.java
     }
 
     public FlowerBush(String flowerType, String colour, String scent) {

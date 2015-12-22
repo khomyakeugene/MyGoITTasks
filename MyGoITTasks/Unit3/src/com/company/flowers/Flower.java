@@ -11,7 +11,7 @@ public class Flower {
     public final static String WITHOUT_SCENT_MESSAGE = "without scent";
     public final static String FLOWER_DESCRIPTION_MESSAGE = "flower: {0}, colour: {1}, scent: {2}";
 
-    private String flowerType = null;
+    private String flowerType = null;//поля класса типа Объект по дефолту принимает значение null. нет необходимости инициализировать.
     private String colour = null;
     private String scent = null;
 
@@ -39,7 +39,7 @@ public class Flower {
         this.colour = colour;
     }
 
-    public Flower(String flowerType, String colour, String scent) {
+    public Flower(String flowerType, String colour, String scent) {//по java convention порядок записи класса такой: поля, конструкторы, методы
         super();
 
         setFlowerType(flowerType);
@@ -49,7 +49,7 @@ public class Flower {
 
     public Flower(String colour, String scent) {
         this(Const.UNKNOWN_FLOWER_TYPE, colour, scent);
-     }
+     }//То, что подсвечивает идея серым в коде - не используется - мертвый код - удаляем или применяем.
 
     public Flower(String colour) {
         this(Const.UNKNOWN_FLOWER_TYPE, colour, WITHOUT_SCENT_MESSAGE);
