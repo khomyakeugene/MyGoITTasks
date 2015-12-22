@@ -15,7 +15,7 @@ public class TestFileData {
     public static final String TEST_TEXT = "Test Text";
     public static final String TEST_DIRECTORY = "Test Directory";
 
-    private SimpleFile simpleFile = null;
+    private SimpleFile simpleFile = null;// ќбъекты так же как и стринги по умолчанию инициализируютс€ null (если пол€ класса)
     private TextFile textFile = null;
     private AudioFile audioFile = null;
     private ImageFile imageFile = null;
@@ -31,7 +31,8 @@ public class TestFileData {
     }
 
     private void initFileData() {
-        simpleFile = new SimpleFile(getTestFilename());
+        simpleFile = new SimpleFile(getTestFilename()); //в общем-то, если ты обращаешьс€ к полю класса внутри тоже же класса,
+        //то нет смысла использовать геттер. Ёто больше дл€ обращений из вне.
         textFile = new TextFile(getTestFilename() + Const.TEXT_FILE_EXT, TEST_TEXT);
         audioFile = new AudioFile(getTestFilename() + Const.AUDIO_FILE_EXT);
         imageFile = new ImageFile(getTestFilename() + Const.IMAGE_FILE_EXT);
@@ -52,6 +53,8 @@ public class TestFileData {
 
         for (int i=0; i < commonCount; i++)
             Utils.writeMessage(MessageFormat.format(Const.FILE_DATA_MESSAGE, i, ((SimpleFile)directoryData[i]).getFileName(), ((SimpleFile)directoryData[i]).getFileType()));
+//ужас-ужас длинна€ строка!)) Ќадо избегать таких паровозов. ¬ыносим во временные переменные.
+        //«ачем-то делаешь type cast на SimpleFile.  ” теб€ же те методы возвращают стринги.  ак их можно кастить на класс SimpleFile?
         }
 
     public void demonstrateDirectoryData() {
@@ -70,8 +73,8 @@ public class TestFileData {
         String audioDataStringPresentation;
         try {
             audioDataStringPresentation = audioFile.getAudioData().toString();
-        }
-        catch (Throwable e) {
+        } //catch пишетс€ в этой строке сразу после фигурной скобки + пробел
+        catch (Throwable e) {//а с какого метода мы ловим эксепшн? не пон€ла
             audioDataStringPresentation = null;
         }
         Utils.writeMessage(Utils.getClassNameMessage(audioFile));
@@ -100,7 +103,9 @@ public class TestFileData {
     public void demonstrateData(String testFilename) {
         setTestFilename(testFilename);
         
-        demonstrateFileData();
+        demonstrateFileData(); //если ты из одного метода вызываешь другие методы, которые наход€тс€ в этом же классе,
+        //и этот (вызываемый) метод используетс€ только в этом классе, то его делаем private и помещаем под тем методом, который
+        //его вызвал (или максимально близко под ним)
         demonstrateDirectoryData();
     }
 }

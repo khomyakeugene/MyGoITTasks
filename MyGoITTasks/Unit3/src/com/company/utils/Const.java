@@ -3,9 +3,9 @@ package com.company.utils;
 /**
  * Created by Yevgen on 20.12.2015.
  */
-public class Const {
+public class Const {//Для перечисления констант также можно использовать enum
     public final static String CLASS_NAME_MESSAGE = "Class Name: {0}";
-    public final static String THIS_ROGRAM_NAME_MESSAGE = "This Program Name: {0}";
+    public final static String THIS_ROGRAM_NAME_MESSAGE = "This Program Name: {0}";//опечатка - идея подсказывает.Program
     public final static String TEXT_DATA_MESSAGE = "Text data: {0}";
     public final static String AUDIO_DATA_MESSAGE = "Audio data: {0}";
     public final static String IMAGE_DATA_MESSAGE = "Image data: {0}";
@@ -29,7 +29,7 @@ public class Const {
     public final static String UNKNOWN_FLOWER_TYPE = "Undefined Flower Type";
     public final static String ROSE_FLOWER_TYPE = "Rose";
     public final static String ASTER_FLOWER_TYPE = "Aster";
-    public final static String CAMOMILE_FLOWER_TYPE = "Camomile";
+    public final static String CAMOMILE_FLOWER_TYPE = "Camomile";//Учим английский Chamomile
     public final static String TULIP_FLOWER_TYPE = "Tulip";
 
     public final static String RED_COLOUR = "Red";

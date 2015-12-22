@@ -13,7 +13,7 @@ public class SimpleFile {
     private Date lastModifyDate;
     private String fileType = Const.UNKNOWN_FILE_TYPE;
 
-    protected void setFileType(String fileType) {
+    protected void setFileType(String fileType) { //почему важно protected?
         this.fileType = fileType;
     }
 

@@ -19,7 +19,7 @@ public class Main {
 
     public static void demonstrateData() {
         // Demonstrate "file infrastructure"
-        (new TestFileData()).demonstrateData(thisProgramName);
+        new TestFileData().demonstrateData(thisProgramName); // здесь я убрала лишние скобки, сравни с нижними строками.
 
         // Demonstrate flowers
         (new TestFlowerData()).demonstrateData();
