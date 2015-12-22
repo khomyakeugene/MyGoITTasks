@@ -1,4 +1,9 @@
-package com.company;
+package com.company.tests;
+
+import com.company.*;
+import com.company.files.*;
+import com.company.utils.Const;
+import com.company.utils.Utils;
 
 import java.text.MessageFormat;
 import java.util.HashMap;
@@ -7,6 +12,9 @@ import java.util.HashMap;
  * Created by Yevgen on 21.12.2015.
  */
 public class TestFileData {
+    public static final String TEST_TEXT = "Test Text";
+    public static final String TEST_DIRECTORY = "Test Directory";
+
     private SimpleFile simpleFile = null;
     private TextFile textFile = null;
     private AudioFile audioFile = null;
@@ -24,13 +32,13 @@ public class TestFileData {
 
     private void initFileData() {
         simpleFile = new SimpleFile(getTestFilename());
-        textFile = new TextFile(getTestFilename() + Const.TEXT_FILE_EXT, TestData.testText);
+        textFile = new TextFile(getTestFilename() + Const.TEXT_FILE_EXT, TEST_TEXT);
         audioFile = new AudioFile(getTestFilename() + Const.AUDIO_FILE_EXT);
         imageFile = new ImageFile(getTestFilename() + Const.IMAGE_FILE_EXT);
     }
 
     private void initDirectoryData() {
-        directory = new Directory(TestData.testDirectory);
+        directory = new Directory(TEST_DIRECTORY);
 
         directory.addFile(textFile);
         directory.addFile(imageFile);

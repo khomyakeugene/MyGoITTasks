@@ -1,4 +1,12 @@
-package com.company;
+package com.company.tests;
+
+import com.company.flowers.Bouquet;
+import com.company.utils.Const;
+import com.company.flowers.Aster;
+import com.company.flowers.Camomile;
+import com.company.flowers.Rose;
+import com.company.flowers.RoseBush;
+import com.company.flowers.Tulip;
 
 /**
  * Created by Yevgen on 21.12.2015.

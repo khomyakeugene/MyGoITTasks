@@ -1,5 +1,7 @@
-package com.company;
+package com.company.files;
 
+import com.company.files.SimpleFile;
+import com.company.utils.Const;
 import javafx.scene.image.Image;
 // public class Image extends java.lang.Object
 // The Image class represents graphical images and is used for loading images from a specified URL.

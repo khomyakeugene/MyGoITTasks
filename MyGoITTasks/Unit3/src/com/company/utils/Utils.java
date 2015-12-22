@@ -1,4 +1,6 @@
-package com.company;
+package com.company.utils;
+
+import com.company.utils.Const;
 
 import java.text.MessageFormat;
 

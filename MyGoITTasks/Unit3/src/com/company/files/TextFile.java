@@ -1,4 +1,7 @@
-package com.company;
+package com.company.files;
+
+import com.company.files.SimpleFile;
+import com.company.utils.Const;
 
 /**
  * Created by Yevgen on 20.12.2015.

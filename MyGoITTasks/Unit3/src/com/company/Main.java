@@ -1,5 +1,11 @@
 package com.company;
 
+import com.company.tests.TestFileData;
+import com.company.tests.TestFlowerData;
+import com.company.tests.TestMusicShop;
+import com.company.utils.Const;
+import com.company.utils.Utils;
+
 import java.text.MessageFormat;
 
 public class Main {
@@ -15,10 +21,11 @@ public class Main {
         // Demonstrate "file infrastructure"
         (new TestFileData()).demonstrateData(thisProgramName);
 
-        // Demonstrate folwers
+        // Demonstrate flowers
         (new TestFlowerData()).demonstrateData();
 
-        (new TestMusicShop()).demonstrateMusicShop();
+        // Demonstrate music shop
+        (new TestMusicShop()).demonstrateData();
     }
 }
 

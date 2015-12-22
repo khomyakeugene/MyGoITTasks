@@ -1,4 +1,6 @@
-package com.company;
+package com.company.flowers;
+
+import com.company.utils.Const;
 
 /**
  * Created by Yevgen on 21.12.2015.
@@ -15,14 +17,12 @@ public class RoseBush extends FlowerBush {
     }
 
     public RoseBush(String colour, String scent, Boolean isThorn, int roseCount) {
-        super(Const.ROSE_FLOWER_TYPE, colour, scent);
-        // Delete one flower because of "new property" "isThorn"
-        removeFlower(getFlowerByIndex(0));
+        super(Const.ROSE_FLOWER_TYPE, colour, scent, 0);
 
-        // Remember whether there thorns are presented
+        // Remember whether the thorns are presented
         setThorn(isThorn);
-
-        addFlowers(roseCount);
+        // Only after that form the rosebush!
+        formFlowerBush(roseCount);
     }
 
     public RoseBush(String colour, String scent) {
@@ -32,7 +32,6 @@ public class RoseBush extends FlowerBush {
     public RoseBush(String colour) {
         this(colour, Const.TYPICAL_ROSE_SCENT);
     }
-
 
     public RoseBush(String colour, int roseCount) {
         this (colour, Const.TYPICAL_ROSE_SCENT, false, roseCount);

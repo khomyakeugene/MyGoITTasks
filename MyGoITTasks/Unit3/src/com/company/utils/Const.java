@@ -1,4 +1,4 @@
-package com.company;
+package com.company.utils;
 
 /**
  * Created by Yevgen on 20.12.2015.
@@ -10,7 +10,6 @@ public class Const {
     public final static String AUDIO_DATA_MESSAGE = "Audio data: {0}";
     public final static String IMAGE_DATA_MESSAGE = "Image data: {0}";
     public final static String FILE_DATA_MESSAGE = "File[{0}]: name - {1}, type - {2}";
-    public final static String FLOWER_DATA_MESSAGE = "File[{0}]: name - {1}, type - {2}";
     // --------------------------------------------------------------
 
     public final static String PROPERTY_NAME_PROGRAM = "program.name";

@@ -1,4 +1,10 @@
-package com.company;
+package com.company.tests;
+
+import com.company.music.Guitar;
+import com.company.music.MusicShop;
+import com.company.music.Piano;
+import com.company.music.Trumpet;
+import com.company.utils.Const;
 
 /**
  * Created by Yevgen on 21.12.2015.
@@ -19,7 +25,7 @@ public class TestMusicShop {
         musicShop.showMusicShop();
     }
 
-    public void demonstrateMusicShop() {
+    public void demonstrateData() {
         initMusicShopData();
         showMusicShop();
     }

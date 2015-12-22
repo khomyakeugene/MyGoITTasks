@@ -1,4 +1,6 @@
-package com.company;
+package com.company.files;
+
+import com.company.utils.Const;
 
 import java.util.Date;
 
