@@ -15,6 +15,7 @@ public class ImageFile extends SimpleFile {
     public ImageFile(String fileName) {
         super(fileName, Const.IMAGE_FILE_TYPE);
     }
+    //по java convention соблюдаем последовательность объявления: поля класса, конструкторы, методы.
 
     public ImageFile(String fileName, Image image) {
         this(fileName);
