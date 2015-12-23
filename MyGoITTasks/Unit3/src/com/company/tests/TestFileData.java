@@ -51,7 +51,9 @@ public class TestFileData {
         Object[] directoryData = fileList.values().toArray();
 
         for (int i=0; i < commonCount; i++)
-            Utils.writeMessage(MessageFormat.format(Const.FILE_DATA_MESSAGE, i, ((SimpleFile)directoryData[i]).getFileName(), ((SimpleFile)directoryData[i]).getFileType()));
+            Utils.writeMessage(MessageFormat.format(Const.FILE_DATA_MESSAGE, i,
+                    ((SimpleFile)directoryData[i]).getFileName(),
+                    ((SimpleFile)directoryData[i]).getFileType()));
         }
 
     public void demonstrateDirectoryData() {
@@ -70,8 +72,7 @@ public class TestFileData {
         String audioDataStringPresentation;
         try {
             audioDataStringPresentation = audioFile.getAudioData().toString();
-        }
-        catch (Throwable e) {
+        } catch (Throwable e) {
             audioDataStringPresentation = null;
         }
         Utils.writeMessage(Utils.getClassNameMessage(audioFile));
@@ -81,8 +82,7 @@ public class TestFileData {
         String imageDataStringPresentation;
         try {
             imageDataStringPresentation = imageFile.getImage().toString();
-        }
-        catch (Throwable e) {
+        } catch (Throwable e) {
             imageDataStringPresentation = null;
         }
         Utils.writeMessage(Utils.getClassNameMessage(imageFile));

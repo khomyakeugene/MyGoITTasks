@@ -5,7 +5,7 @@ package com.company.utils;
  */
 public class Const {
     public final static String CLASS_NAME_MESSAGE = "Class Name: {0}";
-    public final static String THIS_ROGRAM_NAME_MESSAGE = "This Program Name: {0}";
+    public final static String THIS_PROGRAM_NAME_MESSAGE = "This Program Name: {0}";
     public final static String TEXT_DATA_MESSAGE = "Text data: {0}";
     public final static String AUDIO_DATA_MESSAGE = "Audio data: {0}";
     public final static String IMAGE_DATA_MESSAGE = "Image data: {0}";

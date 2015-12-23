@@ -12,14 +12,6 @@ import javafx.scene.image.Image;
 public class ImageFile extends SimpleFile {
     private Image image;
 
-    public Image getImage() {
-        return image;
-    }
-
-    public void setImage(Image image) {
-        this.image = image;
-    }
-
     public ImageFile(String fileName) {
         super(fileName, Const.IMAGE_FILE_TYPE);
     }
@@ -29,4 +21,13 @@ public class ImageFile extends SimpleFile {
 
         setImage(image);
     }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
 }

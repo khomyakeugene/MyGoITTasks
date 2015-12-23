@@ -12,14 +12,6 @@ public class MusicalInstrument {
 
     private String instrumentType = null;
 
-    public String getInstrumentType() {
-        return instrumentType;
-    }
-
-    public void setInstrumentType(String instrumentType) {
-        this.instrumentType = instrumentType;
-    }
-
     public MusicalInstrument(String instrumentType) {
         super();
 
@@ -28,6 +20,14 @@ public class MusicalInstrument {
 
     public MusicalInstrument() {
         this(Const.UNKNOWN_INSTRUMENT_TYPE);
+    }
+
+    public String getInstrumentType() {
+        return instrumentType;
+    }
+
+    public void setInstrumentType(String instrumentType) {
+        this.instrumentType = instrumentType;
     }
 
     @Override

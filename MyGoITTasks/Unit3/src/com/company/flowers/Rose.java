@@ -12,14 +12,6 @@ public class Rose extends Flower {
 
     private Boolean isThorn = false;
 
-    public Boolean getThorn() {
-        return isThorn;
-    }
-
-    public void setThorn(Boolean thorn) {
-        isThorn = thorn;
-    }
-
     public Rose(String colour, String scent, Boolean isThorn) {
         super(Const.ROSE_FLOWER_TYPE, colour, scent);
 
@@ -36,6 +28,14 @@ public class Rose extends Flower {
 
     public Rose() {
         this(null);
+    }
+
+    public Boolean getThorn() {
+        return isThorn;
+    }
+
+    public void setThorn(Boolean thorn) {
+        isThorn = thorn;
     }
 
     @Override

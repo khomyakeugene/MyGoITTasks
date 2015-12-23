@@ -10,14 +10,6 @@ import sun.audio.AudioData;
 public class AudioFile extends SimpleFile {
     AudioData audioData = null;
 
-    public AudioData getAudioData() {
-        return audioData;
-    }
-
-    public void setAudioData(AudioData audioData) {
-        this.audioData = audioData;
-    }
-
     public AudioFile(String fileName) {
         super(fileName, Const.AUDIO_FILE_TYPE);
     }
@@ -26,5 +18,13 @@ public class AudioFile extends SimpleFile {
         this(fileName);
 
         setAudioData(audioData);
+    }
+
+    public AudioData getAudioData() {
+        return audioData;
+    }
+
+    public void setAudioData(AudioData audioData) {
+        this.audioData = audioData;
     }
 }

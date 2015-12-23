@@ -15,30 +15,6 @@ public class Flower {
     private String colour = null;
     private String scent = null;
 
-    public String getScent() {
-        return scent;
-    }
-
-    public String getFlowerType() {
-        return flowerType;
-    }
-
-    public void setFlowerType(String flowerType) {
-        this.flowerType = flowerType;
-    }
-
-    public void setScent(String scent) {
-        this.scent = scent;
-    }
-
-    public String getColour() {
-        return colour;
-    }
-
-    public void setColour(String colour) {
-        this.colour = colour;
-    }
-
     public Flower(String flowerType, String colour, String scent) {
         super();
 
@@ -49,7 +25,7 @@ public class Flower {
 
     public Flower(String colour, String scent) {
         this(Const.UNKNOWN_FLOWER_TYPE, colour, scent);
-     }
+    }
 
     public Flower(String colour) {
         this(Const.UNKNOWN_FLOWER_TYPE, colour, WITHOUT_SCENT_MESSAGE);
@@ -57,6 +33,30 @@ public class Flower {
 
     public Flower() {
         this(null);
+    }
+
+    public String getScent() {
+        return scent;
+    }
+
+    public void setScent(String scent) {
+        this.scent = scent;
+    }
+
+    public String getFlowerType() {
+        return flowerType;
+    }
+
+    public void setFlowerType(String flowerType) {
+        this.flowerType = flowerType;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
     }
 
     @Override

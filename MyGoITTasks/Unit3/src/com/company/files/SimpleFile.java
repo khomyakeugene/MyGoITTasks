@@ -13,10 +13,6 @@ public class SimpleFile {
     private Date lastModifyDate;
     private String fileType = Const.UNKNOWN_FILE_TYPE;
 
-    protected void setFileType(String fileType) {
-        this.fileType = fileType;
-    }
-
     public SimpleFile(String fileName) {
         setFileName(fileName);
     }
@@ -26,16 +22,20 @@ public class SimpleFile {
         setFileType(fileType);
     }
 
+    public String getFileType() {
+        return fileType;
+    }
+
+    public void setFileType(String fileType) { //������ ����� protected?
+        this.fileType = fileType;
+    }
+
     public String getFileName() {
         return fileName;
     }
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
-    }
-
-    public String getFileType() {
-        return fileType;
     }
 
     public Date getLastModifyDate() {

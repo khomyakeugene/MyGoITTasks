@@ -1,6 +1,5 @@
 package com.company.files;
 
-import com.company.files.SimpleFile;
 import com.company.utils.Const;
 
 import java.util.HashMap;
@@ -9,22 +8,23 @@ import java.util.HashMap;
  * Created by Yevgen on 20.12.2015.
  */
 public class Directory extends SimpleFile {
-    private HashMap<String, SimpleFile> Files;
+    private HashMap<String, SimpleFile> files;
 
     public HashMap<String, SimpleFile> getFiles() {
-        return Files;
+        return files;
     }
+
     public Directory(String fileName) {
         super(fileName, Const.DIRECTORY_FILE_TYPE);
 
-        Files = new HashMap();
+        files = new HashMap<String, SimpleFile>();
     }
 
-    public void addFile(SimpleFile aFile) {
-        Files.put(aFile.getFileName(),aFile);
+    public void addFile(SimpleFile file) {//�� ��� ����-�� ������ ��� �� ��������, ����� ��������� aSomething, ����� ������ file
+        files.put(file.getFileName(), file);
     }
 
-    public SimpleFile getFileByName(String Filename) {
-        return Files.get(Filename);
+    public SimpleFile getFileByName(String Filename) { //��������� ����� ��������� - ���� ���� - fileName
+        return files.get(Filename);
     }
 }

@@ -11,14 +11,6 @@ public class MusicShop {
     private String shopName = null;
     private Vector<MusicalInstrument> instruments = null;
 
-    public String getShopName() {
-        return shopName;
-    }
-
-    public void setShopName(String shopName) {
-        this.shopName = shopName;
-    }
-
     public MusicShop(String shopName) {
         super();
 
@@ -30,6 +22,14 @@ public class MusicShop {
 
     public MusicShop() {
         this("");
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
     }
 
     public void addInstrument(MusicalInstrument instrument) {
